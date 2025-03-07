@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Keylogger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Educational Keylogger</h1>
+            <p class="subtitle">A simple demonstration of keyboard event handling</p>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                <span class="theme-toggle-dark">🌙</span>
+                <span class="theme-toggle-light">☀️</span>
+            </button>
+        </header>
+
+        <div class="main-content">
+            <div class="control-panel">
+                <button id="toggleLogging" class="btn btn-primary">
+                    <span class="icon">▶</span> Start Logging
+                </button>
+                <button id="clearLogs" class="btn btn-secondary">
+                    <span class="icon">🗑</span> Clear Logs
+                </button>
+                <button id="downloadLogs" class="btn btn-accent">
+                    <span class="icon">⬇</span> Download Logs
+                </button>
+                <div class="status-indicator">
+                    <div class="status-dot"></div>
+                    <span class="status-text">Logging inactive</span>
+                </div>
+            </div>
+
+            <div class="panels-container">
+                <div class="panel">
+                    <h2>Input Area</h2>
+                    <textarea 
+                        id="inputArea" 
+                        placeholder="Click 'Start Logging' and type here to see keystrokes being logged..."
+                    ></textarea>
+                </div>
+
+                <div class="panel">
+                    <h2>Logging Details</h2>
+                    <div id="logDisplay" class="log-display"></div>
+                </div>
+            </div>
+
+            <div class="educational-note">
+                <strong>Educational Purpose Only:</strong>
+                <p>♦️This is a demonstration of keyboard event handling in JavaScript. </p>
+                <p>♦️The application only displays keystrokes in the browser and does not 
+                store or transmit any data in the browser.</p>
+            </div>
+        </div>
+
+        <section class="info-section">
+            <h2>How Keyloggers Work</h2>
+            <p>Keyloggers capture keyboard input and record it for later retrieval. They can be used for:</p>
+            <ul>
+                <li>Legitimate monitoring (parental controls, employee monitoring)</li>
+                <li>Malicious purposes (stealing passwords, personal information)</li>
+                <li>Educational research (understanding security vulnerabilities)</li>
+            </ul>
+            
+            <h2>Protecting Yourself</h2>
+            <ul>
+                <li>Use anti-malware software that can detect keyloggers</li>
+                <li>Be cautious about installing software from untrusted sources</li>
+                <li>Keep your operating system and applications updated</li>
+                <li>Use two-factor authentication when possible</li>
+                <li>Consider using password managers that auto-fill credentials</li>
+                <li>Use virtual keyboards for sensitive information</li>
+            </ul>
+        </section>
+        
+        <footer>
+            <p>This demonstration is for educational purposes only. Using keyloggers without consent is illegal and unethical.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
