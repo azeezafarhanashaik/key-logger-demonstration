@@ -1,4 +1,4 @@
-# Key Logger Demonstration
+# WebKeyLogger
 
 This project is a **browser-based keylogger demonstration** built with JavaScript. It captures keyboard inputs in real-time and logs them within the browser interface for **educational purposes only**.
 
